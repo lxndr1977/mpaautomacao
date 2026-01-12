@@ -1,0 +1,180 @@
+<nav
+  id="navbar"
+  class="bg-white border-b-1 border-zinc-200 fixed w-full top-0 z-50 transition-all duration-300 ease-in-out"
+>
+  <div class="max-w-7xl xl:container mx-auto px-4 md:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      <!-- Logo -->
+      <div class="flex-shrink-0 flex items-center">
+        <a href="/">
+          <img class="h-10 xl:h-12 w-auto" src="/mpa/logo-mpaautomacao.webp" alt="MPA Automação Industrial" />
+        </a>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex flex-1 justify-end me-12">
+        <div class="flex items-center space-x-8">
+          <a href="#diferenciais" class="text-zinc-900 hover:text-primary px-3 py-2 font-medium transition-colors duration-200">
+            Diferenciais
+          </a>
+          <a href="#serie-idf" class="text-zinc-900 hover:text-primary px-3 py-2 font-medium transition-colors duration-200">
+            Série IDF
+          </a>
+          <a href="#especificacoes" class="text-zinc-900 hover:text-primary px-3 py-2 font-medium transition-colors duration-200">
+            Especificações
+          </a>
+          <a href="#modelos" class="text-zinc-900 hover:text-primary px-3 py-2 font-medium transition-colors duration-200">
+            Modelos
+          </a>
+        </div>
+      </div>
+
+      <!-- Desktop CTA -->
+      <div class="hidden md:flex items-center">
+        <a
+          href="https://wa.me/556235410015?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20vendedor."
+          target="_blank"
+          class="relative font-semibold rounded-md overflow-hidden group transition-all duration-300 inline-flex items-center justify-center sm:w-auto bg-primary text-white hover:bg-primary-500 w-full md:w-auto"
+        >
+          <span class="px-5 py-3 lg:px-6 lg:py-3 relative z-10 flex items-center justify-center gap-2 transition-transform duration-300">
+            <span class="text-base whitespace-nowrap">Fale conosco</span>
+          </span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <div class="md:hidden">
+        <button
+          id="mobile-menu-button"
+          class="text-zinc-900 hover:text-primary focus:outline-none focus:text-primary p-2 cursor-pointer"
+          aria-label="Abrir menu"
+        >
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobile-menu"
+    class="md:hidden fixed inset-0 z-40 transform translate-x-full transition-transform duration-300 ease-in-out"
+  >
+    <div class="bg-white h-full w-full shadow-xl overflow-y-auto">
+      <div class="flex justify-end p-4 sticky top-0 bg-white z-10">
+        <button
+          id="close-menu-button"
+          class="text-zinc-900 hover:text-primary focus:outline-none focus:text-primary p-2 cursor-pointer"
+          aria-label="Fechar menu"
+        >
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="px-6 py-4 space-y-4 pb-8">
+        <div class="flex-shrink-0 flex items-center mb-12">
+          <a href="/"><img class="h-10 xl:h-12 w-auto" src="/mpa/logo-mpaautomacao.webp" alt="MPA Automação Industrial" /></a>
+        </div>
+
+        <a href="#diferenciais" class="text-zinc-900 hover:text-primary hover:bg-zinc-50 block px-4 py-3 text-lg font-medium rounded-md transition-colors duration-200">
+          Diferenciais
+        </a>
+        <a href="#serie-idf" class="text-zinc-900 hover:text-primary hover:bg-zinc-50 block px-4 py-3 text-lg font-medium rounded-md transition-colors duration-200">
+          Série IDF
+        </a>
+        <a href="#especificacoes" class="text-zinc-900 hover:text-primary hover:bg-zinc-50 block px-4 py-3 text-lg font-medium rounded-md transition-colors duration-200">
+          Especificações
+        </a>
+        <a href="#modelos" class="text-zinc-900 hover:text-primary hover:bg-zinc-50 block px-4 py-3 text-lg font-medium rounded-md transition-colors duration-200">
+          Modelos
+        </a>
+
+        <div class="pt-4">
+          <a
+            href="https://wa.me/556235410015?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20vendedor."
+            target="_blank"
+            class="relative font-semibold rounded-md overflow-hidden group transition-all duration-300 inline-flex items-center justify-center sm:w-auto bg-primary text-white hover:bg-primary-light w-full"
+          >
+            <span class="px-5 py-3 lg:px-6 lg:py-3 relative z-10 flex items-center justify-center gap-2 transition-transform duration-300">
+              <span class="text-base whitespace-nowrap">Fale conosco</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script is:inline>
+  (() => {
+    const scrollThreshold = 100;
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const closeMenuButton = document.getElementById("close-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const navbar = document.getElementById("navbar");
+
+      if (!mobileMenuButton || !closeMenuButton || !mobileMenu || !navbar) return;
+
+      let isMenuOpen = false;
+      let lastScrollY = window.scrollY;
+
+      function openMenu() {
+        isMenuOpen = true;
+        mobileMenu.classList.remove("translate-x-full");
+        mobileMenu.classList.add("translate-x-0");
+        navbar.classList.remove("-translate-y-full");
+      }
+
+      function closeMenu() {
+        isMenuOpen = false;
+        mobileMenu.classList.remove("translate-x-0");
+        mobileMenu.classList.add("translate-x-full");
+      }
+
+      function handleScroll() {
+        const currentScrollY = window.scrollY;
+        if (isMenuOpen) return;
+
+        if (currentScrollY > scrollThreshold) {
+          if (currentScrollY > lastScrollY) {
+            navbar.classList.add("-translate-y-full");
+            navbar.classList.remove("shadow-lg");
+          } else {
+            navbar.classList.remove("-translate-y-full");
+            navbar.classList.add("shadow-lg");
+          }
+        } else {
+          navbar.classList.remove("-translate-y-full");
+          navbar.classList.remove("shadow-lg");
+        }
+
+        lastScrollY = currentScrollY;
+      }
+
+      mobileMenuButton.addEventListener("click", openMenu);
+      closeMenuButton.addEventListener("click", closeMenu);
+
+      let scrollTimeout;
+      window.addEventListener("scroll", () => {
+        if (scrollTimeout) clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(handleScroll, 10);
+      });
+
+      mobileMenu.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth >= 768 && isMenuOpen) closeMenu();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && isMenuOpen) closeMenu();
+      });
+    });
+  })();
+</script>

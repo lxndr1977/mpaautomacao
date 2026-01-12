@@ -1,11 +1,160 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Navbar from "../components/Nabvar.astro";
+import IDFSerie from "../components/IDFSerie.astro";
+import Specificiations from "../components/Specifications.astro";
+import TemperaturesSection from "../components/TemperaturesSection.astro";
+import EnergySection from "../components/EnergySection.astro";
+import Diferentialsection from "../components/Diferentialsection.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<Layout>
-	<Welcome />
+<Layout
+	title="Secadores de Ar SMC IDF"
+	description="Desempenho industrial, economia e confiabilidade para sistemas de ar comprimido"
+	canonical="/mpa"
+>
+	<Navbar />
+
+	<main>
+		<section
+			id="hero"
+			class="relative overflow-hidden bg-gradient-to-br from-secondary to-secondary/80 text-white"
+		>
+			<div
+				class="relative max-w-7xl xl:container mx-auto px-4 lg:px-8 w-full lg:w-[95%] pt-24 py-12 flex flex-col lg:flex-row items-center gap-20 md:gap-6"
+			>
+				<div class="w-full md:w-2/5 text-left md:pt-0">
+					<h1
+						class="text-4xl md:text-5xl font-semibold text-balance leading-tight"
+					>
+						Secadores de ar comprimido série SMC IDF para a sua
+						indústria
+					</h1>
+					<p class="mt-6 text-md lg:text-lg max-w-3xl mb-8">
+						Os secadores de ar da Série IDF garantem ar comprimido
+						seco, livre de umidade e protegido contra corrosão, além
+						de alta eficiência, ponto de orvalho estável e operação
+						robusta mesmo em ambientes severos.
+					</p>
+					<a
+						href="https://wa.me/556235410015?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20vendedor."
+						target="_blank"
+						class="relative font-semibold rounded-md overflow-hidden group transition-all duration-300 inline-flex items-center justify-center sm:w-auto bg-primary text-white hover:bg-primary-light w-full md:w-auto"
+					>
+						<span
+							class="px-5 py-3 lg:px-6 lg:py-3 relative z-10 flex items-center justify-center gap-2 transition-transform duration-300"
+						>
+							<span class="text-base whitespace-nowrap"
+								>Fale com um especialista</span
+							>
+						</span>
+					</a>
+				</div>
+
+				<div class="w-full md:w-3/5 flex justify-center">
+					<img
+						src="/mpa/hero-refrigeradorb.webp"
+						alt="Secador de ar SMC IDF"
+						loading="lazy"
+						decoding="async"
+						class="w-full h-auto max-h-[580px] object-contain"
+					/>
+				</div>
+			</div>
+		</section>
+
+		<section id="diferenciais" class="py-16 lg:py-20 xl:py-32 bg-white">
+			<div
+				class="max-w-7xl xl:container mx-auto px-4 md:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+			>
+				<!-- Imagem -->
+				<div class="flex justify-center">
+					<img
+						src="/mpa/intro-section-secador-idf.webp"
+						alt="Secadores de ar SMC IDF"
+						loading="lazy"
+						class="w-full max-w-xl object-contain"
+					/>
+				</div>
+
+				<!-- Conteúdo -->
+				<div>
+					<h2
+						class="text-3xl lg:text-4xl font-semibold text-secondary mb-6"
+					>
+						Diferenciais que Garantem Desempenho e Confiabilidade
+					</h2>
+
+					<ul class="space-y-4 text-lg text-zinc-700 mb-12">
+						<li>
+							✔ Trocador de calor anticorrosão, com maior
+							durabilidade.
+						</li>
+						<li>✔ Drenagem automática do condensado.</li>
+						<li>✔ Operação estável até 45 °C.</li>
+						<li>
+							✔ Faixas de vazão para pequenas e grandes
+							instalações.
+						</li>
+						<li>✔ Equipamentos compactos e silenciosos.</li>
+						<li>✔ Baixo consumo de energia.</li>
+						<li>✔ Opções monofásicas ou trifásicas.</li>
+						<li>
+							✔ Economia contínua com eficiência e confiabilidade.
+						</li>
+					</ul>
+
+					<a
+						href="https://wa.me/556235410015"
+						target="_blank"
+						class="inline-flex bg-primary text-white px-6 py-3 rounded-md font-semibold hover:bg-primary-light"
+					>
+						Fale com um especialista
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<IDFSerie />
+
+		<Specificiations />
+
+		<TemperaturesSection />
+		<EnergySection />
+		<Diferentialsection  />
+
+		
+
+		<section class="py-16 lg:py-32 bg-white"> <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8"> <div class="max-w-4xl mx-auto text-center  mb-12 lg:mb-24 "> <h2 class="text-3xl lg:text-4xl font-semibold text-secondary mb-6"> Confiabilidade e Robustez </h2> <p class="text-lg text-zinc-700 mb-10 "> A série SMC IDF foi desenvolvida para oferecer alta resistência, operação estável e adequação às exigências de ambientes industriais diversos. </p> </div> <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"> <div class="p-6 bg-zinc-50 rounded-xl shadow-sm"> <div class="inline-flex p-2 rounded-md bg-primary mb-12"> <svg width="1em" height="1em" class="w-7 h-7 text-white" data-icon="tabler:check">   <symbol id="ai:tabler:check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m5 12l5 5L20 7"></path></symbol><use href="#ai:tabler:check"></use>  </svg> </div> <h3 class="text-xl font-semibold mb-2 text-secondary"> Compacta e silenciosa </h3> <p class="text-zinc-700 text-base leading-relaxed"> Estrutura robusta e silenciosa, permitindo instalação mesmo em ambientes com limitação de espaço. </p> </div><div class="p-6 bg-zinc-50 rounded-xl shadow-sm"> <div class="inline-flex p-2 rounded-md bg-primary mb-12"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-7 h-7 text-white" data-icon="tabler:check">   <use href="#ai:tabler:check"></use>  </svg> </div> <h3 class="text-xl font-semibold mb-2 text-secondary"> Resistente ao calor </h3> <p class="text-zinc-700 text-base leading-relaxed"> Projetada para  mantenr excelente desempenho mesmo em locais de alta temperatura. </p> </div><div class="p-6 bg-zinc-50 rounded-xl shadow-sm"> <div class="inline-flex p-2 rounded-md bg-primary mb-12"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-7 h-7 text-white" data-icon="tabler:check">   <use href="#ai:tabler:check"></use>  </svg> </div> <h3 class="text-xl font-semibold mb-2 text-secondary"> Refrigerantes ecológicos </h3> <p class="text-zinc-700 text-base leading-relaxed"> Utiliza refrigerantes ecológicos garantindo menor impacto sobre o meio ambiente. </p> </div> </div> </div> </section>
+
+
+
+
+
+		<section class="py-16 lg:py-28 bg-secondary text-white"> <div class="max-w-6xl xl:max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row gap-20 md:gap-32 items-center"> <!-- FOTO À ESQUERDA --> <div class="w-full md:w-[45%] flex justify-center"> <img src="/mpa/_astro/maintenance-section.DDdcv1no_6Kh1J.webp" alt="Acesso frontal aos componentes do SMC IDF" loading="lazy" decoding="async" fetchpriority="auto" width="1018" height="1151" class="w-full h-auto object-contain"> </div> <!-- CONTEÚDO À DIREITA --> <div class="w-full md:w-[55%]"> <h2 class="text-3xl font-semibold mb-6"> Manutenção e Operação </h2> <p class="text-lg text-white mb-8"> A série SMC IDF foi projetada para simplificar rotinas de manutenção e garantir acesso facilitado aos componentes internos, reduzindo tempo de parada e aumentando a confiabilidade do sistema. </p> <ul class="space-y-4 text-lg text-white mb-12"> <li class="flex gap-3 items-start"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-5 h-5 text-primary shrink-0 mt-1" data-icon="tabler:checkbox">   <use href="#ai:tabler:checkbox"></use>  </svg> <span>Sistema de dreno automático para condensado, que elimina a umidade sem necessidade de intervenção constante.</span> </li><li class="flex gap-3 items-start"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-5 h-5 text-primary shrink-0 mt-1" data-icon="tabler:checkbox">   <use href="#ai:tabler:checkbox"></use>  </svg> <span>Filtro de pó (dust filter) padrão, responsável por proteger o trocador de calor contra impurezas.</span> </li><li class="flex gap-3 items-start"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-5 h-5 text-primary shrink-0 mt-1" data-icon="tabler:checkbox">   <use href="#ai:tabler:checkbox"></use>  </svg> <span>Componentes elétricos acessíveis pela parte frontal por meio de painel removível, facilitando inspeções e manutenções.</span> </li> </ul> <a href="https://wa.me/556235410015?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20vendedor." target="_blank" class="relative font-semibold rounded-md overflow-hidden group transition-all duration-300 inline-flex items-center justify-center sm:w-auto bg-primary text-white hover:bg-primary-light w-full md:w-auto"> <span class="px-5 py-3 lg:px-6 lg:py-3 relative z-10 flex items-center justify-center gap-2 transition-transform duration-300"> <svg width="1em" height="1em" viewBox="0 0 24 24" class="w-5 h-5 sm:w-5 sm:h-5 md:w-6 md:h-6 flex-shrink-0" data-icon="tabler:brand-whatsapp">   <use href="#ai:tabler:brand-whatsapp"></use>  </svg> <span class="text-base whitespace-nowrap">Solicite um orçamento</span> </span> </a> </div> </div> </section>
+
+
+		
+	</main>
+
+	<!-- Botão flutuante do WhatsApp (igual ao seu HTML) -->
+	<div class="fixed bottom-6 right-6 z-50">
+		<a
+			href="https://wa.me/556235410015"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="group flex items-center justify-center w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110"
+		>
+			<span class="text-white font-bold">WA</span>
+			<div
+				class="absolute right-16 top-1/2 transform -translate-y-1/2 bg-zinc-700 text-white text-xs px-3 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none"
+			>
+				Fale conosco no WhatsApp
+			</div>
+		</a>
+	</div>
+
+	<Footer />
 </Layout>
