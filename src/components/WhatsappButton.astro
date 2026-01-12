@@ -1,0 +1,21 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<div class="fixed bottom-6 right-6 z-50">
+    <a
+        href="https://wa.me/556235410015"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group flex items-center justify-center w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110"
+    >
+        <span class="text-white font-bold">
+            <Icon name="tabler:brand-whatsapp" class="w-8 h-8"/>
+        </span>
+        <div
+            class="absolute right-16 top-1/2 transform -translate-y-1/2 bg-zinc-700 text-white text-xs px-3 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none"
+        >
+            Fale conosco no WhatsApp
+        </div>
+    </a>
+</div>

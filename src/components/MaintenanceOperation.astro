@@ -1,0 +1,79 @@
+---
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
+
+import imgSection from "../assets/images/maintenance-section.webp";
+---
+
+<section class="py-16 lg:py-28 bg-secondary text-white">
+    <div
+        class="max-w-6xl xl:max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row gap-20 md:gap-32 items-center"
+    >
+        <div class="w-full md:w-[45%] flex justify-center">
+            <Image
+                src={imgSection}
+                alt="Acesso frontal aos componentes do SMC IDF"
+                class="w-full h-auto object-contain"
+            />
+        </div>
+
+        <div class="w-full md:w-[55%]">
+            <h2 class="text-3xl font-semibold mb-6">Manutenção e Operação</h2>
+            <p class="text-lg text-white mb-8">
+                A série SMC IDF foi projetada para simplificar rotinas de
+                manutenção e garantir acesso facilitado aos componentes
+                internos, reduzindo tempo de parada e aumentando a
+                confiabilidade do sistema.
+            </p>
+            <ul class="space-y-4 text-lg text-white mb-12">
+                <li class="flex gap-3 items-start">
+                    <Icon
+                        name="tabler:checkbox"
+                        class="w-5 h-5 text-primary shrink-0 mt-1"
+                    />
+                    <span
+                        >Sistema de dreno automático para condensado, que
+                        elimina a umidade sem necessidade de intervenção
+                        constante.</span
+                    >
+                </li>
+                <li class="flex gap-3 items-start">
+                    <Icon
+                        name="tabler:checkbox"
+                        class="w-5 h-5 text-primary shrink-0 mt-1"
+                    />
+                    <span
+                        >Filtro de pó (dust filter) padrão, responsável por
+                        proteger o trocador de calor contra impurezas.</span
+                    >
+                </li>
+                <li class="flex gap-3 items-start">
+                    <Icon
+                        name="tabler:checkbox"
+                        class="w-5 h-5 text-primary shrink-0 mt-1"
+                    />
+                    <span
+                        >Componentes elétricos acessíveis pela parte frontal por
+                        meio de painel removível, facilitando inspeções e
+                        manutenções.</span
+                    >
+                </li>
+            </ul>
+
+            <a
+                href="https://wa.me/556235410015?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20vendedor."
+                target="_blank"
+                class="relative font-semibold rounded-md overflow-hidden group transition-all duration-300 inline-flex items-center justify-center sm:w-auto bg-primary text-white hover:bg-primary-light w-full md:w-auto"
+            >
+                <span
+                    class="px-5 py-3 lg:px-6 lg:py-3 relative z-10 flex items-center justify-center gap-2 transition-transform duration-300"
+                >
+                    <Icon name="tabler:brand-whatsapp" class="w-6 h-6" />
+                    <span class="text-base whitespace-nowrap"
+                        >Solicite um orçamento</span
+                    >
+                </span>
+            </a>
+        </div>
+    </div>
+</section>

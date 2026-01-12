@@ -6,6 +6,12 @@ const {
 } = Astro.props;
 
 const canonicalUrl = new URL(canonical, Astro.site ?? "http://localhost:4321");
+import { Font } from 'astro:assets';
+
+import "../styles/global.css";
+
+import WhatsappButton from '../components/WhatsappButton.astro';
+
 ---
 
 <!doctype html>
@@ -19,13 +25,17 @@ const canonicalUrl = new URL(canonical, Astro.site ?? "http://localhost:4321");
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
     <link rel="sitemap" href="/sitemap-index.xml" />
-
     <meta name="robots" content="index, follow" />
+    
+    <Font cssVariable='--font-poppins' preload />
 
-    <link rel="stylesheet" href="/src/styles/global.css" />
+
+
   </head>
 
   <body class="text-zinc-900 bg-white">
     <slot />
+
+    <WhatsappButton />
   </body>
 </html>

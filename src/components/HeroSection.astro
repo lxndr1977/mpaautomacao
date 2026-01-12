@@ -1,0 +1,50 @@
+---
+import { Image } from 'astro:assets';
+import { Icon } from 'astro-icon/components';
+import imgHero  from '../assets/images/hero-secadores-smc-serie-idf.webp';
+---
+
+<section
+    id="hero"
+    class="relative overflow-hidden bg-gradient-to-br from-secondary to-secondary/80 text-white"
+>
+    <div
+        class="relative max-w-7xl xl:container mx-auto px-4 lg:px-8 w-full lg:w-[95%] pt-40 py-12 flex flex-col lg:flex-row items-center gap-20 md:gap-6"
+    >
+        <div class="w-full md:w-2/5 text-left md:pt-0">
+            <h1
+                class="text-4xl md:text-5xl font-semibold text-balance leading-tight"
+            >
+                Secadores de ar comprimido série SMC IDF para a sua indústria
+            </h1>
+            <p class="mt-6 text-md lg:text-lg max-w-3xl mb-8">
+                Os secadores de ar da Série IDF garantem ar comprimido seco,
+                livre de umidade e protegido contra corrosão, além de alta
+                eficiência, ponto de orvalho estável e operação robusta mesmo em
+                ambientes severos.
+            </p>
+            <a
+                href="https://wa.me/556235410015?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20vendedor."
+                target="_blank"
+                class="relative font-semibold rounded-md overflow-hidden group transition-all duration-300 inline-flex items-center justify-center sm:w-auto bg-primary text-white hover:bg-primary-light w-full md:w-auto"
+            >
+                <span
+                    class="px-5 py-3 lg:px-6 lg:py-3 relative z-10 flex items-center justify-center gap-2 transition-transform duration-300"
+                >
+                    <Icon name="tabler:brand-whatsapp" class="w-6 h-6" />
+                    <span class="text-base whitespace-nowrap"
+                        >Fale com um especialista</span
+                    >
+                </span>
+            </a>
+        </div>
+
+        <div class="w-full md:w-3/5 flex justify-center">
+            <Image
+                src={imgHero}
+                alt="Secador de ar SMC IDF"
+                class="w-full h-auto max-h-[580px] object-contain"
+            />
+        </div>
+    </div>
+</section>

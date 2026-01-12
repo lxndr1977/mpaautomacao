@@ -1,12 +1,21 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
 <footer class="bg-white">
   <div class="bg-secondary">
     <div class="max-w-5xl xl:max-w-6xl mx-auto px-4 md:px-6 lg:px-8 py-20">
-      <div class="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-32">
+      <div
+        class="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-32"
+      >
         <div class="text-center md:text-left md:flex-1 text-white">
-          <h2 class="mb-2 text-2xl font-semibold tracking-tight">Precisa de ajuda? Fale conosco!</h2>
+          <h2 class="mb-2 text-2xl font-semibold tracking-tight">
+            Precisa de ajuda? Fale conosco!
+          </h2>
           <p class="leading-relaxed">
-            Nossos especialistas estão disponíveis para indicar o secador IDF que melhor atende às necessidades da sua planta,
-            garantindo segurança, durabilidade e economia.
+            Nossos especialistas estão disponíveis para indicar o secador IDF
+            que melhor atende às necessidades da sua planta, garantindo
+            segurança, durabilidade e economia.
           </p>
         </div>
 
@@ -15,58 +24,134 @@
           target="_blank"
           class="relative font-semibold rounded-md overflow-hidden group transition-all duration-300 inline-flex items-center justify-center sm:w-auto bg-primary text-white hover:bg-primary-light w-full md:w-auto"
         >
-          <span class="px-5 py-3 lg:px-6 lg:py-3 relative z-10 flex items-center justify-center gap-2 transition-transform duration-300">
-            <span class="text-base whitespace-nowrap">Solicite um orçamento</span>
+          <span
+            class="px-5 py-3 lg:px-6 lg:py-3 relative z-10 flex items-center justify-center gap-2 transition-transform duration-300"
+          >
+            <Icon name="tabler:brand-whatsapp" class="w-6 h-6" />
+            <span class="text-base whitespace-nowrap"
+              >Solicite um orçamento</span
+            >
           </span>
         </a>
       </div>
     </div>
   </div>
 
-  <div class="max-w-7xl xl:container mx-auto text-secondary px-4 md:px-6 lg:px-8 text-center md:text-start">
+  <div
+    class="max-w-7xl xl:container mx-auto text-secondary px-4 md:px-6 lg:px-8 text-center md:text-start"
+  >
     <div class="flex flex-col md:flex-row py-32 gap-20">
       <div class="flex-1">
         <div class="mb-12">
-          <a href="/"><img class="h-12 xl:h-14 w-auto mx-auto md:mx-0" src="/mpa/logo-mpaautomacao.webp" alt="MPA Automação Industrial" /></a>
+          <a href="/"
+            ><img
+              class="h-12 xl:h-14 w-auto mx-auto md:mx-0"
+              src="/logo-mpaautomacao.webp"
+              alt="MPA Automação Industrial"
+            /></a
+          >
         </div>
 
         <h3 class="mb-8 font-medium">Siga nas redes</h3>
         <div class="inline-flex gap-8">
-          <a href="https://www.instagram.com/mpa.automacao/" class="bg-primary hover:bg-primary/90 rounded-full p-2" target="_blank" aria-label="Instagram">
-            <span class="text-white text-sm">IG</span>
+          <a
+            href="https://www.instagram.com/mpa.automacao/"
+            class="bg-primary hover:bg-primary/90 rounded-full p-2"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <span class="text-white text-sm">
+              <Icon name="tabler:brand-instagram" class="w-6 h-6" />
+            </span>
           </a>
-          <a href="https://www.youtube.com/@MPAAutomacaoGoiania" class="bg-primary hover:bg-primary/90 rounded-full p-2" target="_blank" aria-label="YouTube">
-            <span class="text-white text-sm">YT</span>
+
+          <a
+            href="https://br.linkedin.com/company/mpaautomacao"
+            class="bg-primary hover:bg-primary/90 rounded-full p-2"
+            target="_blank"
+            aria-label="YouTube"
+          >
+            <span class="text-white text-sm">
+              <Icon name="tabler:brand-linkedin" class="w-6 h-6" />
+            </span>
+          </a>
+          <a
+            href="https://www.youtube.com/@MPAAutomacaoGoiania"
+            class="bg-primary hover:bg-primary/90 rounded-full p-2"
+            target="_blank"
+            aria-label="YouTube"
+          >
+            <span class="text-white text-sm">
+              <Icon name="tabler:brand-youtube" class="w-6 h-6" />
+            </span>
           </a>
         </div>
       </div>
 
       <div class="flex-1">
-        <h3 class="mb-6 uppercase text-sm text-primary font-semibold tracking-widest">Onde estamos</h3>
+        <h3
+          class="mb-6 uppercase text-sm text-primary font-semibold tracking-widest"
+        >
+          Onde estamos
+        </h3>
         <p>R. 7, 28, Qd. 38, Lt. 05, Jardim Santo Antônio</p>
         <p>Goiânia, Goiás</p>
         <p class="mb-6">CEP 74853-200</p>
-        <a class="flex flex-row items-center justify-center md:justify-start text-sm mt-4 gap-2" href="https://maps.app.goo.gl/Fm65t9zcS2TqUdfG8" target="_blank">
+        <a
+          class="flex flex-row items-center justify-center md:justify-start text-sm mt-4 gap-2"
+          href="https://maps.app.goo.gl/Fm65t9zcS2TqUdfG8"
+          target="_blank"
+        >
+          <Icon name="tabler:map-pin" class="w-4 h-4 text-primary" />
+
           Ver no mapa
         </a>
       </div>
 
       <div class="flex-1 flex flex-col space-y-3">
-        <h3 class="mb-6 font-medium uppercase text-sm text-primary font-semibold tracking-widest">Atendimento</h3>
-        <a href="tel:6235410015" class="flex flex-row items-center justify-center md:justify-start text-xl font-semibold gap-2">(62) 3541-0015</a>
-        <a href="https://wa.me/556235410015" target="_blank" class="flex flex-row items-center justify-center md:justify-start text-xl font-semibold gap-2">
+        <h3
+          class="mb-6 font-medium uppercase text-sm text-primary font-semibold tracking-widest"
+        >
+          Atendimento
+        </h3>
+        <a
+          href="tel:6235410015"
+          class="flex flex-row items-center justify-center md:justify-start text-xl font-semibold gap-2"
+          >
+          <Icon name="tabler:phone" class="w-6 h-6 text-primary" />
+          (62) 3541-0015</a
+        >
+        <a
+          href="https://wa.me/556235410015"
+          target="_blank"
+          class="flex flex-row items-center justify-center md:justify-start text-xl font-semibold gap-2"
+        >
+          <Icon name="tabler:brand-whatsapp" class="w-6 h-6 text-primary" />
+
           (62) 3541-0015
         </a>
-        <a href="mailto:mpa@mpaautomacao.com.br" class="flex flex-row items-center justify-center md:justify-start gap-2 text-secondary">
+        <a
+          href="mailto:mpa@mpaautomacao.com.br"
+          class="flex flex-row items-center justify-center md:justify-start gap-2 text-secondary"
+        >
+          <Icon name="tabler:mail" class="w-4 h-4 text-primary" />
           mpa@mpaautomacao.com.br
         </a>
-        <p class="text-sm mt-6">Seg. a Sex., das 8h às 18h</p>
+        <div class="flex flex-row items-center justify-center md:justify-start gap-2 text-secondary mt-6">
+          <Icon name="tabler:clock" class="w-4 h-4 text-primary" />
+
+          <p class="text-sm ">Seg. a Sex., das 8h às 18h</p>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="max-w-6xl xl:container mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between space-x-1 text-sm text-secondary border-t-1 border-t-neutral-300 py-8 px-4 md:px-6 lg:px-8">
-    <p class="text-center md:text-start mb-4 md:mb-0">© 2026 MPA Automação Industrial. Todos os direitos reservados.</p>
+  <div
+    class="max-w-6xl xl:container mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between space-x-1 text-sm text-secondary border-t-1 border-t-neutral-300 py-8 px-4 md:px-6 lg:px-8"
+  >
+    <p class="text-center md:text-start mb-4 md:mb-0">
+      © 2026 MPA Automação Industrial. Todos os direitos reservados.
+    </p>
     <a href="/politica-de-privacidade">Política de Privacidade</a>
   </div>
 </footer>
