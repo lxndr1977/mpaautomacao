@@ -1,0 +1,56 @@
+<div
+    id="privacy-modal"
+    class="fixed bottom-4 left-1/2 -translate-x-1/2 w-[95%] max-w-2xl
+         bg-white border border-zinc-100 rounded-lg shadow-lg p-4 z-50
+         opacity-0 translate-y-8 transition-all duration-500 ease-out"
+>
+    <div
+        class="flex flex-col space-y-3 md:flex-row md:items-center md:space-y-0 md:space-x-4"
+    >
+        <p
+            class="text-sm text-zinc-900 leading-relaxed md:flex-1 text-center md:text-left"
+        >
+            Ao continuar navegando neste site, você concorda com o uso de
+            cookies e com a nossa
+            <a
+                href="politica-de-privacidade"
+                class="underline text-zinc-800 hover:text-zinc-900 transition-colors cursor-pointer"
+            >
+                Política de Privacidade
+            </a>.
+        </p>
+
+        <a
+            id="accept-privacy"
+            class="relative font-semibold rounded-md overflow-hidden group transition-all duration-300 inline-flex items-center justify-center sm:w-auto bg-primary text-white hover:bg-primary-light w-full"
+        >
+            <span
+                class="px-5 py-3 lg:px-6 lg:py-3 relative z-10 flex items-center justify-center gap-2 transition-transform duration-300"
+            >
+                <span class="text-sm whitespace-nowrap">Eu concordo</span>
+            </span>
+        </a>
+    </div>
+</div>
+
+<script is:inline>
+    window.addEventListener("DOMContentLoaded", () => {
+        const modal = document.getElementById("privacy-modal");
+        const btn = document.getElementById("accept-privacy");
+
+        // 💫 Mostra o modal suavemente
+        setTimeout(() => {
+            modal.classList.remove("opacity-0", "translate-y-8");
+            modal.classList.add("opacity-100", "translate-y-0");
+        }, 300);
+
+        // 💫 Fecha o modal suavemente
+        btn.addEventListener("click", () => {
+            modal.classList.remove("opacity-100", "translate-y-0");
+            modal.classList.add("opacity-0", "translate-y-8");
+            setTimeout(() => {
+                modal.style.display = "none";
+            }, 400); // espera animação terminar
+        });
+    });
+</script>

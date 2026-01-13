@@ -1,9 +1,71 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 128 128">
-    <path d="M50.4 78.5a75.1 75.1 0 0 0-28.5 6.9l24.2-65.7c.7-2 1.9-3.2 3.4-3.2h29c1.5 0 2.7 1.2 3.4 3.2l24.2 65.7s-11.6-7-28.5-7L67 45.5c-.4-1.7-1.6-2.8-2.9-2.8-1.3 0-2.5 1.1-2.9 2.7L50.4 78.5Zm-1.1 28.2Zm-4.2-20.2c-2 6.6-.6 15.8 4.2 20.2a17.5 17.5 0 0 1 .2-.7 5.5 5.5 0 0 1 5.7-4.5c2.8.1 4.3 1.5 4.7 4.7.2 1.1.2 2.3.2 3.5v.4c0 2.7.7 5.2 2.2 7.4a13 13 0 0 0 5.7 4.9v-.3l-.2-.3c-1.8-5.6-.5-9.5 4.4-12.8l1.5-1a73 73 0 0 0 3.2-2.2 16 16 0 0 0 6.8-11.4c.3-2 .1-4-.6-6l-.8.6-1.6 1a37 37 0 0 1-22.4 2.7c-5-.7-9.7-2-13.2-6.2Z" />
-    <style>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   fill="none"
+   viewBox="0 0 128 128"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="favicon.svg"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath7">
+      <rect
+         style="fill:#f68633;fill-opacity:1;stroke:none;stroke-width:0.35269;-inkscape-stroke:none"
+         id="rect8"
+         width="368.4205"
+         height="378.60526"
+         x="323.3782"
+         y="-234.9649"
+         ry="48.394218" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="4.452563"
+     inkscape:cx="70.858065"
+     inkscape:cy="52.329411"
+     inkscape:window-width="1920"
+     inkscape:window-height="1008"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <style
+     id="style1">
         path { fill: #000; }
         @media (prefers-color-scheme: dark) {
             path { fill: #FFF; }
         }
     </style>
+  <rect
+     style="fill:#f68633;fill-opacity:1;stroke:none;stroke-width:0.113687;-inkscape-stroke:none"
+     id="rect1"
+     width="118.75698"
+     height="122.03994"
+     x="4.621511"
+     y="2.9800317"
+     ry="15.599434"
+     inkscape:export-filename="/home/apr/www/mpaautomacao/public/images/secador-idf3.png"
+     inkscape:export-xdpi="60.950001"
+     inkscape:export-ydpi="60.950001" />
+  <path
+     style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.35269;-inkscape-stroke:none"
+     d="M 320.83757,25.261186 389.27735,-202.13544 503.52759,-31.587974 617.22589,-198.82383 709.3988,107.49928 577.48668,105.84349 535.53973,-42.626654 446.67844,88.181606 358.36906,-36.003444 321.94146,108.05123 Z"
+     id="path5"
+     sodipodi:nodetypes="ccccccccccc"
+     clip-path="url(#clipPath7)"
+     transform="matrix(0.32234085,0,0,0.32234085,-99.616495,79.163592)" />
 </svg>

@@ -11,6 +11,7 @@ import { Font } from 'astro:assets';
 import "../styles/global.css";
 
 import WhatsappButton from '../components/WhatsappButton.astro';
+import PrivacyPolicyModal from '../components/PrivacyPolicyModal.astro';
 
 ---
 
@@ -37,5 +38,7 @@ import WhatsappButton from '../components/WhatsappButton.astro';
     <slot />
 
     <WhatsappButton />
+
+    <PrivacyPolicyModal />
   </body>
 </html>
